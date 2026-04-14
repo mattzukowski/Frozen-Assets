@@ -1,12 +1,5 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-
-const geist = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: "Frozen Assets | Fantasy Hockey Keeper League",
@@ -27,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="antialiased">
-      <body className={`${geist.variable} font-sans bg-navy-950 text-white`}>
+      <body className="font-sans bg-navy-950 text-white">
         {children}
       </body>
     </html>
